@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyza Nur Bakkal | Portfolyo</title>
+    <!-- Harici Kütüphaneler -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS Dosyasını Bağlıyoruz -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+<div class="cursor-glow"></div>
+<div class="cursor-ring"></div>
+
+    <!-- ÜST MENÜ -->
+    <header>
+        <div class="logo" id="nav-logo">&lt;BeyzaNurBAKKAL /&gt;</div>
+        <nav>
+            <a href="#hero" id="m-home">Giriş</a>
+            <a href="#beceriler" id="m-skills">Beceriler</a>
+            <a href="#projeler" id="m-projects">Projeler</a>
+            <a href="#egitim" id="m-edu">Eğitim</a>
+            <a href="#deneyim" id="m-exp">Deneyim</a>
+            <a href="#sertifikalar" id="m-certs">Sertifikalar</a>
+            <a href="#faaliyetler" id="m-acts">Faaliyetler</a>
+            <a href="#iletisim" id="m-contact">İletişim</a>
+            <button class="lang-switch" onclick="toggleLanguage()">EN</button>
+        </nav>
+    </header>
+
+<!-- GİRİŞ -->
+    <section id="hero" class="hero-container">
+        <div class="hero-left">
+            <div class="welcome-tag" id="hero-welcome"><span>•</span> Merhaba, ben</div>
+            <h1 id="hero-name">Beyza Nur BAKKAL</h1>
+            <h2 id="hero-title">Bilgisayar Mühendisliği Öğrencisi</h2>
+            <p id="hero-desc">Selçuk Üniversitesi Bilgisayar Mühendisliği 3. sınıf öğrencisiyim. Yapay Zeka, Bilgisayarlı Görü (OpenCV/YOLOv8) ve veri bilimi odaklı projeler geliştiriyorum. Şu an Kayseri Erciyes Teknopark'ta, Bayram Altınışık Shuttle şirketinde yaz stajımı sürdürmekteyim. Akademik ve profesyonel alanda TEKNOFEST 2026 Sağlıkta Yapay Zeka yarışmasında takım kaptanlığı yürütüyor, MYS Akıncı İnsansız Su Altı Aracı takımında aktif görev alıyorum. YOLOv8s tabanlı su altı nesne tespiti projem başta olmak üzere, veri bilimi gücüyle  yazılım geliştirme alanlarında uygulamalı projeler yaparak teknik yetkinliklerimi geliştirmeyi hedefliyorum.</p>
+            <!-- Giriş etiketleri satırı ve İngilizce Bilgisi -->
+            <div class="hero-tag-row">
+                <span class="hero-tag" style="border: 1px solid var(--accent-cyan); color: var(--accent-cyan);"id="hero-lang-tag"><i class="fa-solid fa-globe"></i> Yabancı Dil: İngilizce (B2)</span>
+            </div>
+            <br>
+            <div style="display: flex; gap: 1rem;">
+                <a href="#projeler" class="btn" id="btn-hero-projects"><i class="fa-solid fa-code"></i> Projelerimi Gör</a>
+                <a href="#iletisim" class="btn btn-sm" style="padding:0.8rem 2rem;" id="btn-hero-contact">İletişim</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- BECERİLERİM -->
+    <section id="beceriler">
+        <h2 class="section-title" id="t-skills">Teknik Becerilerim</h2>
+
+        <div class="orbit-container">
+            <div class="orbit-ring"></div>
+
+            <div class="orbit-center">
+                <i class="fa-solid fa-terminal" id="orbit-center-icon"></i>
+                <span id="orbit-center-label">Programlama Dilleri</span>
+            </div>
+
+            <div class="orbit-slot pos-1"><div class="orbit-float"><div class="orbit-node"><i class="orbit-icon"></i></div></div></div>
+            <div class="orbit-slot pos-2"><div class="orbit-float"><div class="orbit-node"><i class="orbit-icon"></i></div></div></div>
+            <div class="orbit-slot pos-3"><div class="orbit-float"><div class="orbit-node"><i class="orbit-icon"></i></div></div></div>
+            <div class="orbit-slot pos-4"><div class="orbit-float"><div class="orbit-node"><i class="orbit-icon"></i></div></div></div>
+            <div class="orbit-slot pos-5"><div class="orbit-float"><div class="orbit-node"><i class="orbit-icon"></i></div></div></div>
+            <div class="orbit-slot pos-6"><div class="orbit-float"><div class="orbit-node"><i class="orbit-icon"></i></div></div></div>
+            <div class="orbit-slot pos-7"><div class="orbit-float"><div class="orbit-node"><i class="orbit-icon"></i></div></div></div>
+            <div class="orbit-slot pos-8"><div class="orbit-float"><div class="orbit-node"><i class="orbit-icon"></i></div></div></div>
+        </div>
+
+        <div class="skill-tabs">
+            <button class="skill-tab active" data-cat="lang"><i class="fa-solid fa-terminal"></i> Diller</button>
+            <button class="skill-tab" data-cat="ai"><i class="fa-solid fa-brain"></i> Yapay Zeka & Görü</button>
+            <button class="skill-tab" data-cat="db"><i class="fa-solid fa-database"></i> Veritabanı & Yönetim</button>
+        </div>
+    </section>
+
+    <!-- PROJELERİM -->
+    <section id="projeler">
+        <h2 class="section-title" id="t-projects">Öne Çıkan Projelerim</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 id="p1-title">Sağlıkta Yapay Zeka</h3>
+                    <p id="p1-desc">TEKNOFEST 2026 Sağlıkta Yapay Zeka Yarışması kapsamında, kaptanlığını üstlendiğim MYS- Tomris taklımı ile derin öğrenme algoritmaları kullanarak genetik varyant sınıflandırma sistemi prototipi geliştirilmesi ve veri optimizasyonu çalışması.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">SHAP</span>
+                        <span class="tech-badge">CatBoost</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 id="p2-title">TÜBİTAK 2209-A Destekli Araştırma Projesi</h3>
+                    <p id="p2-desc">Akıllı ilaç yönetimi ve alerjen takibi odağında geliştirilen, derin öğrenme ve veri bilimi tabanlı proaktif bir mobil sağlık uygulaması araştırması. Proje kapsamında TÜBİTAK desteği alınmış ve öğrenci kongresinde poster sunumu gerçekleştirilmiştir.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Data Science</span>
+                        <span class="tech-badge">Mobile Health</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-info">
+                    <h3 id="p3-title">Sua Altı Görüntü İyileştirme ve Nesne Tespit Sistemi</h3>
+                    <p id="p3-desc"> Üniversite bitirme projem kapsamında geliştirmekte olduğum görüntü işleme ve OpenCV kütüphanesi kullanılarak, DUO veri seti üzerinde geliştirilen özgün görüntü iyileştirme yazılımı ile su altı videolarındaki nesnelerin tespiti ve görüntü iyileştirme süreçleri.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Yolov8</span>
+                        <span class="tech-badge">Computer Vision</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+
+            <!-- Gizli Projeler -->
+            <div class="project-card hidden-project">
+                <div class="project-info">
+                    <h3 id="p4-title">Matematik Öğrenme Oyunu</h3>
+                    <p id="p4-desc">C# dilinde, nesne yönelimli programlama (OOP) ve algoritmik mantığı pekiştirmek amacıyla çocuklar için tasarlanmış aritmetik işlem konsol uygulaması.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">OOP</span>
+                        <span class="tech-badge">WindowsForms</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+            <div class="project-card hidden-project">
+                <div class="project-info">
+                    <h3 id="p5-title">Görüntü İşleme Algoritmaları ile Araç Plaka Segmentasyonu ve Tespiti</h3>
+                    <p id="p5-desc">Temel görüntü işleme algoritmalarını içeren ve araç plaka kamera görüntüleri üzerinde gerçek zamanlı segmentasyon/ön işleme operasyonları yapan etkileşimli bir web uygulaması.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Image Processing</span>
+                        <span class="tech-badge">NumPy</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+             <div class="project-card hidden-project">
+                <div class="project-info">
+                    <h3 id="p6-title">Uçtan Uca Klasik ve Asimetrik Kriptoloji Motoru Masaüstü Uygulaması</h3>
+                    <p id="p6-desc">Hazır kriptografi kütüphaneleri kullanılmadan; klasik (Hill, Vigenere, 4 Kare, Rota) ve asimetrik (Rakam Tabanlı ASCII RSA) şifreleme algoritmalarının matematiksel mantıkla sıfırdan kodlandığı, SMTP/IMAP protokolleri üzerinden otomatik e-posta entegrasyonu sağlayan uçtan uca güvenli bir masaüstü uygulaması.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">C#</span>
+                        <span class="tech-badge">Windows Forms</span>
+                        <span class="tech-badge">Cryptography</span>
+                        <span class="tech-badge">SMTP / IMAP</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+             <div class="project-card hidden-project">
+                <div class="project-info">
+                    <h3 id="p7-title">NLP ile Metin Sınıflandırma</h3>
+                    <p id="p7-desc">Sıfırdan toplanıp temizlenen özgün veri seti üzerinde haber kategorizasyonu (Sağlık, Spor, Teknoloji). Klasik ML algoritmaları (BoW, TF-IDF) ile modern derin öğrenme modellerinin (Word2Vec, BERT) performans karşılaştırmasını ve canlı test modülünü içerir.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">NLP</span>
+                        <span class="tech-badge">Machine Learning</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+             <div class="project-card hidden-project">
+                <div class="project-info">
+                    <h3 id="p8-title">Resmi İlan Web Sitesi Veri Tabanı Tasarımı</h3>
+                    <p id="p8-desc">ilan.gov.tr mimarisine benzer, yüksek trafikli ve ilişkisel veri modeli gerektiren resmi ilan web sitesi arka plan mimarisi. MS SQL Server kullanılarak ilişkisel tablolar, indeksleme stratejileri ve performans optimizasyonları kurgulanmıştır.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">MS SQL</span>
+                        <span class="tech-badge">Database Design</span>
+                        <span class="tech-badge">T-SQL</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+             <div class="project-card hidden-project">
+                <div class="project-info">
+                    <h3 id="p9-title">Apartman Yönetim Otomasyonu Veri Tabanı</h3>
+                    <p id="p9-desc">Oracle veri tabanı üzerinde, apartman ve site yönetim süreçlerini otomatize etmek amacıyla kurgulanan arka plan mimarisi. PL/SQL kullanılarak tetikleyiciler (triggers), saklı yordamlar (stored procedures) ve iş mantığı fonksiyonları geliştirilmiştir.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Oracle SQL</span>
+                        <span class="tech-badge">PL/SQL</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+             <div class="project-card hidden-project">
+                <div class="project-info">
+                    <h3 id="p10-title">GitHub Profil Görüntüleyici</h3>
+                    <p id="p10-desc">GitHub kullanıcı adı aratarak profil bilgilerini, repo sayısını, takipçi ve takip istatistiklerini kart şeklinde görüntüleyen ve profili mail ile paylaşmayı sağlayan etkileşimli bir web uygulaması.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">HTML</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">GitHub API</span>
+                    </div>
+                    <a href="#" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+            <div class="project-card hidden-project">
+                <div class="project-info">
+                    <h3 id="p11-title">TuringLab — Turing Makinesi Simülatörü</h3>
+                    <p id="p11-desc">Deterministik tek-şeritli Turing makinelerini YAML formatında tanımlayıp Python'da çalıştıran simülasyon motoru. Unary→Binary dönüşümü, binary karşılaştırma, dizgi kopyalama ve parantez denge kontrolü için 4 farklı TM tasarımı içerir.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">PyYAML</span>
+                        <span class="tech-badge">Automata Theory</span>
+                    </div>
+                    <a href="https://github.com/beyzanurbakkal/turinglab-beyzanurbakkal" class="project-link"><i class="fa-brands fa-github"></i> <span class="repo-text">GitHub'da İncele</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-container">
+            <button class="btn btn-sm" id="btn-toggle-projects" onclick="toggleProjects()">Tüm Projeleri Gör</button>
+        </div>
+    </section>
+
+    <!-- EĞİTİM -->
+    <section id="egitim">
+        <div class="edu-header">
+            <p class="edu-eyebrow">Akademik Geçmiş</p>
+            <h2 class="edu-title" id="t-edu">Eğitim</h2>
+        </div>
+        <div class="edu-timeline">
+            <div class="edu-item">
+                <span class="edu-dot"></span>
+                <div class="edu-content">
+                    <h3 id="edu-uni">Selçuk Üniversitesi — Bilgisayar Mühendisliği</h3>
+                    <span class="edu-date">2023 - 2027</span>
+                    <p id="edu-uni-sub">Bilgisayar Mühendisliği 3. sınıf lisans öğrencisiyim. </p>
+                </div>
+            </div>
+            <div class="edu-item">
+                <span class="edu-dot"></span>
+                <div class="edu-content">
+                    <h3 id="edu-high">Şehit Nuri Aydın Sağır Anadolu Lisesi</h3>
+                    <span class="edu-date">2018 - 2022</span>
+                    <span class="valedictorian-tag" id="tag-val"><i class="fa-solid fa-award"></i> Okul Birinciliği ile mezuniyet</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DENEYİM -->
+    <section id="deneyim">
+        <div class="edu-header">
+            <p class="edu-eyebrow" id="exp-eyebrow">Profesyonel Deneyim</p>
+            <h2 class="edu-title" id="t-exp">Deneyim</h2>
+        </div>
+        <div class="edu-timeline">
+            <div class="edu-item">
+                <span class="edu-dot"></span>
+                <div class="edu-content">
+                    <h3 id="exp1-title">Bayram Altınışık Shuttle Yazılım — Stajyer</h3>
+                    <span class="edu-date" id="exp1-date">Haziran 2026 - Devam Ediyor</span>
+                    <p id="exp1-desc"> Kayseri Erciyes Teknopark'ta yaz stajımı sürdürüyorum. Kişisel portfolyo web sitesi geliştirme projesini yürütüyorum.</p>
+                </div>
+            </div>
+            <div class="edu-item">
+                <span class="edu-dot"></span>
+                <div class="edu-content">
+                    <h3 id="exp2-title">Erbosan Erciyas Boru Sanayii ve Ticaret A.Ş. — Stajyer</h3>
+                    <span class="edu-date" id="exp2-date">Haziran - Temmuz 2025</span>
+                    <p id="exp2-desc">Bilgi teknolojileri departmanında C#, SQL ve DevExpress teknolojileri kullanılarak kurumsal yazılım geliştirme süreçlerine ve modüllerine aktif katkı sağlanması. FastReport ve Windows Report Builder araçları ile dinamik raporlama süreçlerinin kurgulanması, veri analizi ve markalama sistemlerinin yazılım altyapısının optimize edilmesi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERTİFİKALAR -->
+    <section id="sertifikalar">
+        <h2 class="section-title" id="t-certs">Lisanslar & Sertifikalar</h2>
+        <div class="cert-grid">
+            <div class="cert-card">
+                <div class="cert-meta">
+                    <h4 id="c1-title">Savunma Sanayii 401</h4>
+                    <p>Savunma Sanayii Akademi | Haziran 2026</p>
+                </div>
+                <div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://drive.google.com/file/d/1BpWKW3ATstwBjUBgp7r3ENGmhiBZJK-h/view" class="btn btn-sm view-cert-btn" target="_blank"><i class="fa-solid fa-eye"></i> Görüntüle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-meta">
+                    <h4 id="c2-title">Yapay Zeka Uzmanlık Programı Temel Eğitim Sertifikası </h4>
+                    <p>T.C. Sanayii ve Teknoloji Bakanlığı | Şubat 2026</p>
+                </div>
+                <div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://drive.google.com/file/d/1crGhXzv1XjxIRTJgQy8SjiHJ9_PtFg_i/view" class="btn btn-sm view-cert-btn" target="_blank"><i class="fa-solid fa-eye"></i> Görüntüle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-meta">
+                    <h4 id="c3-title">PL/SQL, Oracle Veri Tabanı Programlama</h4>
+                    <p>BTK Akademi | Aralık 2025</p>
+                </div>
+                <div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://drive.google.com/file/d/1jeYUgmgY05DEf3JDTzf6ELYeYF2K-VcN/view" class="btn btn-sm view-cert-btn" target="_blank"><i class="fa-solid fa-eye"></i> Görüntüle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-meta">
+                    <h4 id="c4-title">Savunma Sanayii 401</h4>
+                    <p>Savunma Sanayii Akademi | Haziran 2025</p>
+                </div>
+                <div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://drive.google.com/file/d/1GhVZCTIqwbCz0ygMI99ObN7gS9fUQROC/view" class="btn btn-sm view-cert-btn" target="_blank"><i class="fa-solid fa-eye"></i> Görüntüle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-meta">
+                    <h4 id="c5-title">IBM ile Kodluyoruz: CyberStart</h4>
+                    <p>Kodluyoruz & IBM | Nisan 2025</p>
+                </div>
+                <div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://verified.sertifier.com/tr/verify/72335597902960/" class="btn btn-sm view-cert-btn" target="_blank"><i class="fa-solid fa-eye"></i> Görüntüle</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-meta">
+                    <h4 id="c6-title">UI/ UX Eğitimi</h4>
+                    <p>Kapsül Teknoloji Platformu | Aralık 2024</p>
+                </div>
+                <div>
+                    <div style="margin-top: 0.5rem;">
+                        <a href="https://drive.google.com/file/d/1tcf-IoxVeW8NxKkNwEw4nLDCnhSJg0Hz/view?usp=sharing" class="btn btn-sm view-cert-btn" target="_blank"><i class="fa-solid fa-eye"></i> Görüntüle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAALİYETLER -->
+    <section id="faaliyetler">
+        <h2 class="section-title" id="t-acts">Akademik & Sosyal Faaliyetler</h2>
+        <div class="activity-list">
+            <div class="activity-card">
+                <img src="images/meb_robot.jpg" alt="MEB Robot Yarışması" class="activity-img">
+                <div class="activity-details">
+                    <h4 id="act1-title">18. Uluslararası MEB Robot Yarışması</h4>
+                    <p id="act1-desc">Temel Çizgi İzleyen Kategorisi Hakemi | Antalya (5-8 Mayıs 2026)</p>
+                     <a href="https://robot.meb.gov.tr/" class="activity-link" target="_blank">Detaylar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="activity-badge" id="act1-role">Resmi Hakem</div>
+            </div>
+            <div class="activity-card">
+                <img src="images/sağlıkta_yz2.jpeg" alt="Sağlıkta Yapay Zeka" class="activity-img">
+                <div class="activity-details">
+                    <h4 id="act2-title">TEKNOFEST 2026 Sağlıkta Yapay Zeka Yarışması</h4>
+                    <p id="act2-desc">MYS-Tomris Takımı Kaptanlığı ve Model Geliştirme Süreçleri</p>
+            </div>
+                <div class="activity-badge" id="act2-role">Takım Kaptanı</div>
+            </div>
+            <div class="activity-card">
+                <img src="images/tubitak.jpg" alt="Tübitak logo" class="activity-img">
+                <div class="activity-details">
+                    <h4 id="act3-title"> TÜBİTAK 2209 Öğrenci Projeleri Kongresi</h4>
+                    <p id="act3-desc">Proje poster sunumu | Konya (Kasım 2025)</p>
+                      <a href="https://drive.google.com/file/d/1hmWlzQkrDI7_eW2I9UzYouPa7bs-QLjU/view" class="activity-link" target="_blank">Detaylar <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                <div class="activity-badge" id="act3-role">Poster Sunucusu</div>
+            </div>
+            <div class="activity-card">
+                <img src="images/teknofestsualtii.png" alt="İnsansız Su Altı" class="activity-img">
+                <div class="activity-details">
+                    <h4 id="act2-title">TEKNOFEST 2026 İnsansız Su Altı Sistemleri Yarışması</h4>
+                    <p id="act2-desc"> Yapay Zeka Birimi </p>
+                </div>
+                <div class="activity-badge" id="act2-role">Takım Üyesi</div>
+            </div>
+            <div class="activity-card">
+                <div class="activity-details">
+                    <h4 id="act4-title">TEKNOFEST Kulübü</h4>
+                    <p id="act4-desc"> Selçuk Üniversitesi </p>
+                </div>
+                <div class="activity-badge" id="act4-role">Kurucu Üye</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section id="iletisim">
+        <h2 class="section-title" id="t-contact">İletişime Geç</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+    <p style="color:var(--text-gray); margin-bottom: 2rem;" id="c-text">Projelerim hakkında konuşmak veya iş süreçleri için aşağıdaki ilgili iletişim kanallarından veya yandaki formu doldurarak bana ulaşabilirsiniz.</p>
+    <div class="profile-badges">
+       <a href="mailto:beyzanurbakkal3524@gmail.com" class="badge-row badge-link"><i class="fa-solid fa-envelope"></i> <span>beyzanurbakkal3524@gmail.com</span></a>
+        <a href="https://www.linkedin.com/in/beyza-nur-bakkal-881551295/" target="_blank" class="badge-row badge-link"><i class="fa-brands fa-linkedin"></i> <span>LinkedIn Profilim</span></a>
+        <a href="https://github.com/beyzanurbakkal" target="_blank" class="badge-row badge-link"><i class="fa-brands fa-github"></i> <span>GitHub Profilim</span></a>
+    </div>
+    </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xzdlowna" method="POST">
+                    <div class="form-group">
+                        <label for="name" id="l-name">Adınız Soyadınız</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" id="l-email">E-posta Adresiniz</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="msg" id="l-msg">Mesajınız</label>
+                        <textarea id="msg" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn" id="btn-submit">Mesaj Gönder <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ALT BİLGİ -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Beyza Nur Bakkal</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Motorunu Bağlıyoruz -->
+    <script src="script.js"></script>
+</body>
+</html>
